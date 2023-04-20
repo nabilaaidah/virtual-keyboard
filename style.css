@@ -1,0 +1,79 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: grid;
+    place-items: center;
+    min-height: 80vh;
+    background-color: #0B2447;
+}
+
+.virtual-keyboard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.virtual-keyboard input{
+    background-color: #A5D7E8;
+    border: none;
+    display: inline-block;
+    padding: .5rem 1rem;
+    margin: .3rem;
+    font-size: 1.3rem;
+    color: black;
+    width: 50px;
+    height: 50px;
+    border-radius: .5rem;
+}
+
+.virtual-keyboard .delete{
+    width: 100px;
+}
+
+.virtual-keyboard .shift{
+    width: 75px;
+}
+
+.virtual-keyboard .space{
+    width: 350px;
+}
+
+.virtual-keyboard .delete, .virtual-keyboard .shift, .virtual-keyboard .space{
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+
+.output{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    margin-top: 3rem;
+}
+
+.output input{
+    color: white;
+    background: #0B2447;
+    border: 0px;
+    line-height: 2.2em;
+    text-align: center;
+    font-size: 2em;
+    width: 100%;
+}
+
+.output input:focus{
+    outline: none;
+    border: 0px;
+}
+
+.output ::-webkit-input-placeholder{
+    color: white;
+    text-align: center;
+    font-size: 1em;
+}
